@@ -5,16 +5,31 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "dev",
+        "EXPO_PUBLIC_APP_NAME": "G-Vanta (Dev)",
+        "EXPO_PUBLIC_API_URL": "https://dev-api.gvanta.com/v1"
+      }
     },
     "preview": {
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "qa",
+        "EXPO_PUBLIC_APP_NAME": "G-Vanta (QA)",
+        "EXPO_PUBLIC_API_URL": "https://qa-api.gvanta.com/v1"
       }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "main",
+        "EXPO_PUBLIC_APP_NAME": "G-Vanta",
+        "EXPO_PUBLIC_API_URL": "https://api.gvanta.com/v1"
+      }
     }
   },
   "submit": {
