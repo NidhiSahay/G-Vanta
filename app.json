@@ -5,16 +5,17 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0F172A"
+      "backgroundColor": "#FFFFFF"
     },
     "android": {
+      "package": "com.nidhisahay.gvanta",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#0F172A"
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#FFFFFF"
       },
       "permissions": [
         "ACCESS_COARSE_LOCATION",
